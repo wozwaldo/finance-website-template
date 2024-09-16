@@ -6,13 +6,8 @@ This repository contains a responsive and modern website template designed for f
 
 - **Responsive Design:** The template is fully responsive, ensuring it works well on various screen sizes, including mobile, tablet, and desktop.
 - **Modern UI:** The design uses modern HTML5 and CSS techniques to ensure an appealing and professional look.
-- **Customizable Sections:** Includes essential sections such as:
-  - Corporate Information
-  - About Us
-  - Services
-  - Research
-  - Investor Relations
-- **JavaScript Functionality:** JavaScript is used to enhance user interaction and functionality, including tab navigation and dropdown menus.
+- **Customizable Sections:** Includes essential sections.
+- **JavaScript Functionality:** JavaScript is used to enhance user interaction and functionality.
   
 ## Technologies Used
 

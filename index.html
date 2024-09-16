@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <link rel="stylesheet" href="style.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tab2.js"></script>
+</head>
+
+<body class="page">
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-section left-section"></div>
+        <div class="loader-section right-section"></div>
+    </div>
+    <div class="offwrap"></div>
+    <nav class="right-menu-toggle">
+        <div class="close-btn">
+            <a class="nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </div>
+        <div class="right-menu-content">
+            <span>Fill out your documents digitally,<br>and open your account right away by having a video call with the Investment Representative between 09:30 - 18:00!</span>
+            <div class="btn-box arrow"><a href="#">Open an Account via Video Call<i class="fa-solid fa-video"></i></a></div>
+            <span>(between 09:30 - 18:00)</span>
+            <br>
+            <span>Fill out the contact form, and a Investment Representative will call you to guide you through the process of completing your documents together!</span>
+            <div class="btn-box arrow"><a href="./views/sign-up.html">Fill Out the Form<i class="fa-solid fa-user-pen"></i></a></div>
+        </div>
+    </nav>
+    <div id="search-popup" class="search-popup">
+        <div class="popup-inner">
+            <div class="upper-box">
+                <figure class="logo-box"><a href="#"><img src="./img/logo.png" alt="logo"></a></figure>
+                <a id="close-search"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="overlay-layer"></div>
+            <div class="container">
+                <form name="frmara" class="frmara" action="" method="get"
+                    onsubmit="return doValidateAra('frmara');">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="text" name="q" autocomplete="off" maxlength="200" placeholder="Search...">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="top-inner">
+                    <ul class="info">
+                        <li><i class="fa-solid fa-phone"></i><a href="tel:902120000000">+90 212 000 0000</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="mailto:contact__ATtinfo__DOTcom"
+                                onclick="this.href=this.href.replace(/__AT/,'@').replace(/__DOT/,'.').replace(/__DOT/,'.');">contact@info.com</a>
+                        </li>
+                    </ul>
+                    <div class="top-right">
+                        <div class="login">
+                            <a href="#">Login</a>
+                        </div>
+                        <div class="top-login">
+                            <a href="javascript:void(0);" class="nav-expander2">Sign Up</a>
+                        </div>
+                        <div class="language">
+                            <a href="/?lang=en" class="language-btn"><i class="fa-solid fa-globe"></i>English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-lower">
+            <div class="container">
+                <div class="lower-inner">
+                    <div class="logo-box">
+                        <figure class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="menu-area">
+                        <nav class="main-menu">
+                            <div class="navbar-collapse">
+                                <ul class="navigation">
+                                    <li class="dropdown">
+                                        <a href="./views/accordion-page.html">Corporate<i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./views/accordion-page.html">Accordion Page</a></li>
+                                            <li><a href="./views/basic-page.html">Basic Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="./views/about-us-page.html">About Us<i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./views/about-us-page.html">About Us Page</a></li>
+                                            <li><a href="./views/board-members.html">Board Members</a></li>
+                                            <li><a href="./views/personal-data.html">Personal Data Processing Clarification</a></li>
+                                            <li><a href="./views/branches.html">Branches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#services">Services</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="./views/daily-news.html">Daily News<i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./views/daily-news.html">Daily News</a></li>
+                                            <li><a href="./views/daily-news-second.html">Daily News 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="./views/contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <ul class="menu-right-content">
+                        <li class="search-box search-toggler">
+                            <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="btn-box">
+                            <a href="javascript:void(0);" class="nav-expander">Sign Up</a>
+                        </li>
+                        <a href="javascript:void(0);" class="mobile-nav-toggler">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header" id="myStickyHeader">
+            <div class="container">
+                <div class="lower-inner">
+                    <div class="logo-box">
+                        <figure class="logo">
+                            <a href="./index.html">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="menu-area">
+                        <nav class="main-menu">
+                            <div class="navbar-collapse">
+                                <ul class="navigation">
+                                    <li class="dropdown">
+                                        <a href="./views/accordion-page.html">Corporate<i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./views/accordion-page.html">Accordion Page</a></li>
+                                            <li><a href="./views/basic-page.html">Basic Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="./views/about-us-page.html">About Us<i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./views/about-us-page.html">About Us Page</a></li>
+                                            <li><a href="./views/board-members.html">Board Members</a></li>
+                                            <li><a href="./views/personal-data.html">Personal Data Processing Clarification</a></li>
+                                            <li><a href="./views/branches.html">Branches</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#services">Services</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="./views/daily-news.html">Daily News<i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./views/daily-news.html">Daily News</a></li>
+                                            <li><a href="./views/daily-news-second.html">Daily News 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="./views/contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <ul class="menu-right-content">
+                        <li class="search-box search-toggler">
+                            <i id="search-btn2" class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li class="btn-box">
+                            <a href="javascript:void(0);" class="nav-expander">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <nav class="menu-box">
+            <a class="mobile-close-btn">
+                <i class="fas fa-times"></i>
+            </a>
+            <div class="nav-logo">
+                <a href="#"><img src="./img/logo.png" alt="logo"></a>
+            </div>
+            <div class="menu-outer">
+                <div class="navbar-collapse">
+                    <ul class="navigation">
+                        <li class="mobile-dropdown">
+                            <a href="./views/accordion-page.html">Corporate</a>
+                            <ul class="mobile-content">
+                                <li><a href="./views/accordion-page.html">Accordion Page</a></li>
+                                <li><a href="./views/basic-page.html">Basic Page</a></li>
+                            </ul>
+                            <div class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></div>
+                        </li>
+                        <li class="mobile-dropdown">
+                            <a href="./views/about-us-page.html">About Us</a>
+                            <ul class="mobile-content">
+                                <li><a href="./views/about-us-page.html">About Us Page</a></li>
+                                <li><a href="./views/board-members.html">Board Members</a></li>
+                                <li><a href="./views/personal-data.html">Personal Data Processing Clarification</a></li>
+                                <li><a href="./views/branches.html">Branches</a></li>
+                            </ul>
+                            <div class="dropdown-btn"><i class="fa-solid fa-angle-down"></i></div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="dropdown"></li>
+                            <a href="./views/daily-news.html">Daily News<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./views/daily-news.html">Daily News</a></li>
+                                <li><a href="./views/daily-news-second.html">Daily News 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="mobile-dropdown"></li>
+                            <a href="./views/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>1234 Elm Street Apt. 567 Springfield, IL 62704 USA</li>
+                    <li><a href="tel:902120000000">+90 212 000 0000</a></li>
+                    <li><a href="mailto:contact__ATinfo__DOTcom" onclick="this.href=this.href.replace(/__AT/,'@').replace(/__DOT/,'.').replace(/__DOT/,'.');">contact@info.com</a></li>
+                </ul>
+            </div>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"  ><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="slider">
+        <ul class="items">
+            <li class="item current">
+                <img class="slider-bg" src="/img/bg-2.jpg">
+                <div class="slider-content">
+                    <div class="slider-content-left">
+                        <img src="/img/img-2.png">
+                    </div>
+                    <div class="slider-content-right">
+                        <h1>COMPANY HEADER HERE</h1>
+                        <h2>I am a title. You can edit me.</h2>
+                        <p>I am a dummy text, just here to fill space and look pretty. Blah blah blah, some more random words, and a little bit of filler content. You can replace me with real information later. Just imagine I’m saying something important, but for now, I’m just text on the page, waiting to be replaced. Yada yada, and so on and so forth!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <img class="slider-bg" src="/img/bg-3.jpg">
+                <div class="slider-content">
+                    <div class="slider-content-left">
+                        <h1>COMPANY HEADER HERE</h1>
+                        <h2>I am a title. You can edit me.</h2>
+                        <p>I am a dummy text, just here to fill space and look pretty. Blah blah blah, some more random words, and a little bit of filler content. You can replace me with real information later. Just imagine I’m saying something important, but for now, I’m just text on the page, waiting to be replaced. Yada yada, and so on and so forth!</p>
+                    </div>
+                    <div class="slider-content-right">
+                        <img src="/img/img-2.png">
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <img class="slider-bg" src="/img/bg-4.jpg">
+                <div class="slider-content">
+                    <div class="slider-content-left">
+                        <img src="/img/img-2.png">
+                    </div>
+                    <div class="slider-content-right">
+                        <h1>COMPANY HEADER HERE</h1>
+                        <h2>I am a title. You can edit me.</h2>
+                        <p>I am a dummy text, just here to fill space and look pretty. Blah blah blah, some more random words, and a little bit of filler content. You can replace me with real information later. Just imagine I’m saying something important, but for now, I’m just text on the page, waiting to be replaced. Yada yada, and so on and so forth!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <img class="slider-bg" src="/img/bg.jpg">
+                <div class="slider-content">
+                    <div class="slider-content-left">
+                        <h1>COMPANY HEADER HERE</h1>
+                        <h2>I am a title. You can edit me.</h2>
+                        <p>I am a dummy text, just here to fill space and look pretty. Blah blah blah, some more random words, and a little bit of filler content. You can replace me with real information later. Just imagine I’m saying something important, but for now, I’m just text on the page, waiting to be replaced. Yada yada, and so on and so forth!</p>
+                    </div>
+                    <div class="slider-content-right">
+                        <img src="/img/img-2.png">
+                    </div>
+                </div>
+            </li>
+            <div class="dots">
+                <button type="button" class="dot current"></button>
+                <button type="button" class="dot"></button>
+                <button type="button" class="dot"></button>
+                <button type="button" class="dot"></button>
+            </div>
+        </ul>
+        <div class="buttons">
+            <button type="button" id="prev" class="button prev"></button>
+            <button type="button" id="next" class="button next"></button>
+        </div>
+    </section>
+    <section class="description">
+        <div class="bg-layer"></div>
+        <div class="container">
+            <div class="row">
+                <img src="img/news.jpg" alt="header">
+                <div class="description-content">
+                    <h2 class="title">DESCRIPTION</h2>
+                    <p class="sub-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <a href="#">Click here.</a>
+                    </p>
+                    <div class="btn-youtube">
+                        <a href="#" class="youtube mt-30"><span><i class="fab fa-youtube"></i></span>Youtube Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-title">
+                <h3>OUR SERVICES</h3>
+                <p>To make full use of our services, you can contact a representative at  <a href="tel:+90212000000">+90 212 000 1000</a> or fill out the Contact Form.</p>
+            </div>
+            <div class="tabs">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'product-1')">Product 1</button>
+                    <button class="tablinks" onclick="openTab(event, 'product-2')">Product 2</button>
+                    <button class="tablinks" onclick="openTab(event, 'product-3')">Product 3</button>
+                </div>
+                <div id="product-1" class="tabcontent">
+                    <div class="container">
+                        <div class="content">
+                            <h3>Product 1</h3>
+                            <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <img src="img/product.jpg">
+                        <div class="shape">
+                            <div class="shape-dot-1" style="background-image: url('./img/shape-dots.png');"></div>
+                            <div class="shape-dot-2" style="background-image: url('./img/shape-dots.png');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product-2" class="tabcontent">
+                    <div class="container">
+                        <div class="content">
+                            <h3>Product 2</h3>
+                            <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <img src="img/product2.jpg">
+                        <div class="shape">
+                            <div class="shape-dot-1" style="background-image: url('./img/shape-dots.png');"></div>
+                            <div class="shape-dot-2" style="background-image: url('./img/shape-dots.png');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product-3" class="tabcontent">
+                    <div class="container">
+                        <div class="content">
+                            <h3>Product 3</h3>
+                            <p>TLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <img src="img/product3.jpg">
+                        <div class="shape">
+                            <div class="shape-dot-1" style="background-image: url('./img/shape-dots.png');"></div>
+                            <div class="shape-dot-2" style="background-image: url('./img/shape-dots.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="announcements">
+        <div class="container">
+            <div class="announcements-title">
+                <h3>ANNOUNCEMENTS & NEWS</h3>
+            </div>
+            <div class="announcements__tabs">
+                <div class="announcements__tabs__tab">
+                    <button class="tablinks2" onclick="openTab2(event, 'Announcements')">Announcements</button>
+                    <button class="tablinks2" onclick="openTab2(event, 'News')">News</button>
+                </div>
+                <div id="Announcements" class="tabcontent2">
+                    <div class="container">
+                        <div class="content">
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <img src="img/news.jpg" alt="img">
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                </a>
+                                <ul class="post-info">
+                                    <li>
+                                        <a href="#"><i class="fas fa-bullhorn"></i></a>
+                                        <a href="#">Announcements</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <img src="img/news.jpg" alt="img">
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                </a>
+                                <ul class="post-info">
+                                    <li><a href="#"><i class="fas fa-bullhorn"></i></a><a href="#">Announcements</a></li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <img src="img/news.jpg" alt="img">
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                </a>
+                                <ul class="post-info">
+                                    <li><a href="#"><i class="fas fa-bullhorn"></i></a><a href="#">Announcements</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="#">All Announcements<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="News" class="tabcontent2">
+                    <div class="container">
+                        <div class="content">
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <img src="img/news-2.jpg" alt="img">
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                </a>
+                                <ul class="post-info">
+                                    <li><a href="#"><i class="fas fa-bullhorn"></i></a><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <img src="img/news-2.jpg" alt="img">
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                </a>
+                                <ul class="post-info">
+                                    <li><a href="#"><i class="fas fa-bullhorn"></i></a><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <a href="#">
+                                    <div class="image-box">
+                                        <img src="img/news-2.jpg" alt="img">
+                                    </div>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                                </a>
+                                <ul class="post-info">
+                                    <li>
+                                        <a href="#"><i class="fas fa-bullhorn"></i></a><a href="#">News</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="#">All News<i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pattern-layer" style="background-image: url('img/footer-bg.png');"></div>
+        <div class="container">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer-content">
+                <div class="flex-content">
+                    <div class="left">
+                        <div class="title">
+                            <h3>Company Full Name Here</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="right-flex">
+                            <div class="menu">
+                                <div class="menu-title">
+                                    <h3>Menu</h3>
+                                </div>
+                                <div class="menu-content">
+                                    <ul class="list">
+                                        <li><a href="./views/accordion-page.html">Corporate</a></li>
+                                        <li><a href="./views/about-us-page.html">About Us</a></li>
+                                        <li><a href="#services">Services</a></li>
+                                        <li><a href="./views/daily-news.html">Daily News</a></li>
+                                        <li><a href="./views/contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <div class="title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <ul class="info-list">
+                                    <li><i class="fa-solid fa-location-dot"></i>1234 Elm Street Apt. 567 Springfield, IL 62704 USA</li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="tel:902120000000">+90 212 000 0000</a></li>
+                                    <li><i class="fa-solid fa-envelope"></i></i><a href="mailto:contact__ATinfo__DOTcom" onclick="this.href=this.href.replace(/__AT/,'@').replace(/__DOT/,'.').replace(/__DOT/,'.');">contact@info.com</a>
+                                    </li>
+                                    <li><i class="fa-solid fa-arrow-right"></i></i><a href="./views/branches.html">Other Branches</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="bottom-flex">
+                    <div class="bottom-left">
+                        <p>Copyright © 2024</p>
+                    </div>
+                    <div class="bottom-right">
+                        <ul class="footer-nav">
+                            <li><a href="./views/personal-data.html">Personal Data Processing Clarification</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="go-top" id="goTop"><i class="fas fa-arrow-up"></i></div>
+    <div class="cookie" id="cookie-policy">
+        <div class="cookie-text">
+            <p>We use cookies to improve your experience on our site, analyze traffic, and personalize content. By continuing to browse, you agree to our use of cookies. You can change your cookie settings at any time in your browser.</p>
+        </div>
+        <div class="cookie-btns">
+            <button class="cookie-btn accept" onclick="acceptCookies()">Accept Cookies</button>
+            <button class="cookie-btn reject" onclick="rejectCookies()">Reject Cookies</button>
+        </div>
+    </div>
+</body>
+
+</html>
